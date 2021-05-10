@@ -12,6 +12,8 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -347,122 +349,67 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+<style>
+/* external css: flickity.css */
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
+* { box-sizing: border-box; }
 
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+body { font-family: sans-serif; }
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
+/* prevent vertical scroll bar glitch */
+html { overflow-y: scroll; }
 
-      </div>
-    </section><!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
+.carousel-cell {
+  width: 100%;
+  
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+ 
+}
 
-        <div class="owl-carousel testimonials-carousel">
+</style>
+<section>
+  <div class="section-title">
+    <h2>Certifications</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  </div>
+<div class="carousel" data-flickity>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/pwze4Fn8kG4mZ-k24OQa8DbLP4BbUUQSIb5TAXmrDrwUj7SLgSwmItjU5f5Gg1_KCmbCTgQHcWr_NOA00yB0JdyVSQUW9ea9bLksFgTxoyjtIWeaHEUWbNqu6_uKe4UZCSvJ--k9XgY=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pwze4Fn8kG4mZ-k24OQa8DbLP4BbUUQSIb5TAXmrDrwUj7SLgSwmItjU5f5Gg1_KCmbCTgQHcWr_NOA00yB0JdyVSQUW9ea9bLksFgTxoyjtIWeaHEUWbNqu6_uKe4UZCSvJ--k9XgY=w600-h315-p-k" /> </a>  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/L8VmL5qKobzdaFsH6cuyX-8WTxWJmqUrHlckcQWHZvmWzQbyMXqinFuZyS-0ShGqtYVyXCHfCSEuS80s2EShFfUz7RnPKb1jOtd-RDJHajRyJd2f5XygLPV-BX6ghekZajSSbLtHMyc=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/L8VmL5qKobzdaFsH6cuyX-8WTxWJmqUrHlckcQWHZvmWzQbyMXqinFuZyS-0ShGqtYVyXCHfCSEuS80s2EShFfUz7RnPKb1jOtd-RDJHajRyJd2f5XygLPV-BX6ghekZajSSbLtHMyc=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/nZS6pjU_gibeRvKtairyN_tfw919XCMq2keN8CenTjx5vvwN7uCBnCxM1rRC2MwV-YzRe_NDkjisFyUmDhJySarQTNp5PcfrDPFrilh_Ras4BBS6-a1fzGUOV5-hHCvHjUOz9gTMdIc=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/nZS6pjU_gibeRvKtairyN_tfw919XCMq2keN8CenTjx5vvwN7uCBnCxM1rRC2MwV-YzRe_NDkjisFyUmDhJySarQTNp5PcfrDPFrilh_Ras4BBS6-a1fzGUOV5-hHCvHjUOz9gTMdIc=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/C20c9-9vy9AlDRjBgeF0E9ez3ojgzW6kDOQGke4owo6k6lbUrX4Uh1ieVldsSOt9eJP9LhheT51RU1t_ZdgMASHHR9ZjqzLUXVIglvx5yzJuGdEor3RlkdOUq1LgALpQxCPX_jRNRMk=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/C20c9-9vy9AlDRjBgeF0E9ez3ojgzW6kDOQGke4owo6k6lbUrX4Uh1ieVldsSOt9eJP9LhheT51RU1t_ZdgMASHHR9ZjqzLUXVIglvx5yzJuGdEor3RlkdOUq1LgALpQxCPX_jRNRMk=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/1A6J9UJ9aIthnhmAWyFPxBC0MmL4S5DJMvKdMfLeACOUDhhyTowEj-7t4DEradM_kySIdJOMJVpEuONFR_W59XzypHk9w3O9l2jHCFD-cn82il_c8umwrQ1qX9BfQK4QtbmWdUNRXgo=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/1A6J9UJ9aIthnhmAWyFPxBC0MmL4S5DJMvKdMfLeACOUDhhyTowEj-7t4DEradM_kySIdJOMJVpEuONFR_W59XzypHk9w3O9l2jHCFD-cn82il_c8umwrQ1qX9BfQK4QtbmWdUNRXgo=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/z-2U2caMrL59ys833ZhHIy1jqG0w4PtCtQwvVzv-fMpWwWg6hd3-tcb97bVFxTphGW6EFmvwX5QPXVHRU3p2PDPJMHfWcbbHf4egXGpK0gz1Yfgwu_U00s16jBXPL_pIPMHPDsHY0dU=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/z-2U2caMrL59ys833ZhHIy1jqG0w4PtCtQwvVzv-fMpWwWg6hd3-tcb97bVFxTphGW6EFmvwX5QPXVHRU3p2PDPJMHfWcbbHf4egXGpK0gz1Yfgwu_U00s16jBXPL_pIPMHPDsHY0dU=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/DDwvUFSw7vXpZi_16LW9NAL4v5ClM_3chJmUxf8GNLfPM4P7gr8-W4ByMyjnFSFCFNKPYUY4uKmqtDCHasVdvVoZZYivNd_EFkB-WYZGkzye0HwMeZwImL_05HMz-ign_SLrsb3LEsU=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/DDwvUFSw7vXpZi_16LW9NAL4v5ClM_3chJmUxf8GNLfPM4P7gr8-W4ByMyjnFSFCFNKPYUY4uKmqtDCHasVdvVoZZYivNd_EFkB-WYZGkzye0HwMeZwImL_05HMz-ign_SLrsb3LEsU=w600-h315-p-k" /> </a>
+  </div>
+  <div class="carousel-cell">
+    <a href="https://lh3.googleusercontent.com/n6ZsRJP9M647L73Ku1jMFAmMF8zZUFW0V1GKy7yhV0n1Efgkr7pRZEAsmrv-fbE5nbmsEkFkG1ajBhE4uv4XkKZOXi9AOsEidbfi5bWlKuH3VHfg0iK2ndcVDFDPf07afGjzTuBS4Ns=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/n6ZsRJP9M647L73Ku1jMFAmMF8zZUFW0V1GKy7yhV0n1Efgkr7pRZEAsmrv-fbE5nbmsEkFkG1ajBhE4uv4XkKZOXi9AOsEidbfi5bWlKuH3VHfg0iK2ndcVDFDPf07afGjzTuBS4Ns=w600-h315-p-k" /> </a>
+  </div>
+ 
+</div>
 
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
+</section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
